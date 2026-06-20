@@ -3,114 +3,249 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Attiya SEO Growth Agency | Rank Higher, Get More Clients</title>
-
+<title>Vizta Marketing — SEO Audit &amp; Growth Portfolio</title>
+<meta name="description" content="Vizta Marketing finds what's costing local businesses their Google rankings and fixes it. Audits, technical SEO, and growth systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- NAV -->
-<nav class="navbar">
-  <div class="logo">Attiya SEO Agency</div>
-  <ul>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#results">Results</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-content">
-    <h1>We Help Local Businesses Rank #1 on Google</h1>
-    <p>SEO systems that bring consistent leads without paid ads.</p>
-    <a href="#pricing" class="btn">View Pricing</a>
-  </div>
-  <div class="glow"></div>
+<header class="nav">
+  <a href="#top" class="nav-mark">VIZTA<span>·</span>MARKETING</a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#checklist">Checklist</a>
+    <a href="#process">Process</a>
+    <a href="#findings">Findings</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact" class="nav-cta">Request audit</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
-<!-- SERVICES -->
-<section id="services" class="section hidden">
-  <h2>What We Do</h2>
+<main>
 
-  <div class="grid">
-    <div class="card">Local SEO Optimization</div>
-    <div class="card">Google Maps Ranking</div>
-    <div class="card">Technical SEO Fixes</div>
-    <div class="card">Website Speed Optimization</div>
-    <div class="card">Content Strategy</div>
-    <div class="card">Conversion Optimization</div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing" class="section hidden">
-  <h2>SEO Packages</h2>
-
-  <div class="grid">
-
-    <div class="card price">
-      <h3>Starter</h3>
-      <h2>$199</h2>
-      <p>Basic SEO audit + on-page fixes</p>
-      <button onclick="selectPlan('Starter')">Choose Plan</button>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow">AUDIT FILE NO. 001</p>
+      <h1>Most local businesses are <span class="mark">invisible</span> on page one.</h1>
+      <p class="hero-sub">We open the hood on your search presence, fix what's quietly costing you rankings, and put a plan in place to climb — page by page, fix by fix.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Request a free audit</a>
+        <a href="#findings" class="btn-ghost">See sample findings ↓</a>
+      </div>
     </div>
 
-    <div class="card price highlight">
-      <h3>Growth</h3>
-      <h2>$499</h2>
-      <p>Full SEO optimization + keyword ranking strategy</p>
-      <button onclick="selectPlan('Growth')">Choose Plan</button>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 320 280" class="audit-card">
+        <rect x="4" y="4" width="312" height="272" rx="14" class="card-bg"/>
+        <circle cx="28" cy="30" r="5" class="dot"/>
+        <circle cx="46" cy="30" r="5" class="dot dot-b"/>
+        <circle cx="64" cy="30" r="5" class="dot dot-c"/>
+        <rect x="86" y="24" width="180" height="12" rx="6" class="url-bar"/>
+        <text x="96" y="33" class="url-text">your-business.com</text>
+
+        <text x="28" y="92" class="label-text">GOOGLE POSITION</text>
+        <text x="28" y="160" class="rank-num" id="rankNum">47</text>
+        <text x="28" y="184" class="label-text">for "near me" keywords</text>
+
+        <polyline points="28,230 70,224 112,232 154,208 196,196 238,150 280,108" class="sparkline" id="sparkline"/>
+
+        <g class="stamp" id="stamp">
+          <circle cx="262" cy="60" r="34" class="stamp-circle"/>
+          <text x="262" y="56" text-anchor="middle" class="stamp-text">RANKED</text>
+          <text x="262" y="68" text-anchor="middle" class="stamp-text">#1</text>
+        </g>
+      </svg>
     </div>
+  </section>
 
-    <div class="card price">
-      <h3>Agency Growth</h3>
-      <h2>$999+</h2>
-      <p>Full SEO + backlinks + monthly growth system</p>
-      <button onclick="selectPlan('Agency Growth')">Choose Plan</button>
+  <!-- CHECKLIST -->
+  <section class="checklist" id="checklist">
+    <p class="eyebrow">WHERE WE LOOK FIRST</p>
+    <h2>The audit checklist</h2>
+    <div class="check-grid">
+      <div class="check-item">
+        <span class="check-mark">✓</span>
+        <h3>Local SEO optimization</h3>
+        <p>Google Business Profile, citations, and the local signals that decide who shows up nearby.</p>
+      </div>
+      <div class="check-item">
+        <span class="check-mark">✓</span>
+        <h3>Google Maps ranking</h3>
+        <p>Why competitors outrank you in the map pack, and what closes the gap.</p>
+      </div>
+      <div class="check-item">
+        <span class="check-mark">✓</span>
+        <h3>Technical SEO fixes</h3>
+        <p>Crawl errors, broken indexing, and the structural issues search engines penalize.</p>
+      </div>
+      <div class="check-item">
+        <span class="check-mark">✓</span>
+        <h3>Site speed</h3>
+        <p>Core Web Vitals and load times that quietly push rankings — and visitors — away.</p>
+      </div>
+      <div class="check-item">
+        <span class="check-mark">✓</span>
+        <h3>Content strategy</h3>
+        <p>What to write, for whom, and which keywords are actually worth chasing.</p>
+      </div>
+      <div class="check-item">
+        <span class="check-mark">✓</span>
+        <h3>Conversion optimization</h3>
+        <p>Traffic that arrives but doesn't convert is a leak, not a win. We close it.</p>
+      </div>
     </div>
+  </section>
 
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <p class="eyebrow">HOW AN AUDIT BECOMES GROWTH</p>
+    <h2>The process</h2>
+    <ol class="process-list">
+      <li>
+        <span class="process-num">01</span>
+        <div>
+          <h3>Audit</h3>
+          <p>A full pass over your site and listings — what's broken, what's missing, what's working.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">02</span>
+        <div>
+          <h3>Strategy</h3>
+          <p>A prioritized plan: fix the highest-impact issues first, not the easiest ones.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">03</span>
+        <div>
+          <h3>Execute</h3>
+          <p>Technical fixes, content, and listings work, done — not just recommended.</p>
+        </div>
+      </li>
+      <li>
+        <span class="process-num">04</span>
+        <div>
+          <h3>Report</h3>
+          <p>Plain-language monthly reporting on rankings, traffic, and what's next.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- FINDINGS / CASE STUDIES -->
+  <section class="findings" id="findings">
+    <p class="eyebrow">SAMPLE FINDINGS — swap with your verified client results</p>
+    <h2>What an audit turns into</h2>
+    <div class="findings-grid">
+      <article class="finding-card">
+        <p class="finding-tag">Local service business</p>
+        <p class="finding-text">Site was unindexed on 60% of service pages. Fixed crawl structure and rebuilt local listings.</p>
+        <div class="finding-stat">
+          <span class="stat-before">page 4</span>
+          <span class="stat-arrow">→</span>
+          <span class="stat-after">top 3</span>
+        </div>
+        <p class="finding-meta">for primary keyword · 11 weeks · sample data</p>
+      </article>
+      <article class="finding-card">
+        <p class="finding-tag">E-commerce store</p>
+        <p class="finding-text">Slow product pages were losing rankings. Optimized speed and rewrote category content.</p>
+        <div class="finding-stat">
+          <span class="stat-before">2.1s</span>
+          <span class="stat-arrow">→</span>
+          <span class="stat-after">0.6s</span>
+        </div>
+        <p class="finding-meta">load time · 6 weeks · sample data</p>
+      </article>
+      <article class="finding-card">
+        <p class="finding-tag">Clinic / healthcare</p>
+        <p class="finding-text">Map pack visibility was near zero. Cleaned up citations and added location-specific pages.</p>
+        <div class="finding-stat">
+          <span class="stat-before">~40</span>
+          <span class="stat-arrow">→</span>
+          <span class="stat-after">~140</span>
+        </div>
+        <p class="finding-meta">monthly map views · 90 days · sample data</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <p class="eyebrow">ENGAGEMENT TIERS</p>
+    <h2>Pick a starting point</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <p class="price-amount">$199<span>/mo</span></p>
+        <p class="price-desc">Full audit plus on-page fixes for a single site.</p>
+        <button class="price-btn" data-plan="Starter">Choose Starter</button>
+      </div>
+      <div class="price-card price-featured">
+        <p class="price-flag">Most picked</p>
+        <h3>Growth</h3>
+        <p class="price-amount">$499<span>/mo</span></p>
+        <p class="price-desc">Full optimization plus an ongoing keyword ranking strategy.</p>
+        <button class="price-btn" data-plan="Growth">Choose Growth</button>
+      </div>
+      <div class="price-card">
+        <h3>Agency Growth</h3>
+        <p class="price-amount">$999<span>+/mo</span></p>
+        <p class="price-desc">Full SEO, backlinks, and a monthly growth system.</p>
+        <button class="price-btn" data-plan="Agency Growth">Choose Agency Growth</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="eyebrow">OPEN A FILE</p>
+    <h2>Request your free audit</h2>
+    <p class="contact-sub">Tell us where to look. We'll send a plain-language report within 24 hours.</p>
+
+    <form id="leadForm" novalidate>
+      <label class="field">
+        <span>Your name</span>
+        <input type="text" name="name" required>
+      </label>
+      <label class="field">
+        <span>Your email</span>
+        <input type="email" name="email" required>
+      </label>
+      <label class="field">
+        <span>Website or business</span>
+        <textarea name="website" rows="3"></textarea>
+      </label>
+      <input type="hidden" id="planSelected" name="plan">
+      <button type="submit" class="btn-primary">Submit request</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+
+    <div class="contact-direct">
+      <a href="mailto:hello@vizta-marketing.com">hello@vizta-marketing.com</a>
+      <a href="https://wa.me/923000000000" target="_blank" rel="noopener">WhatsApp</a>
+      <span>Rawalpindi, Pakistan</span>
+    </div>
+    <p class="contact-note">Placeholder contact details — replace with your real email, WhatsApp number, and location before publishing.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Vizta Marketing. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#" target="_blank" rel="noopener">GitHub</a>
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
   </div>
-</section>
-
-<!-- RESULTS -->
-<section id="results" class="section hidden">
-  <h2>What Clients Get</h2>
-
-  <div class="stats">
-    <div><h3>3x</h3><p>More Leads</p></div>
-    <div><h3>Top 3</h3><p>Google Rankings</p></div>
-    <div><h3>30-90 Days</h3><p>Visible Growth</p></div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section contact hidden">
-  <h2>Book Free Strategy Call</h2>
-
-  <form id="leadForm">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Website / Business"></textarea>
-    <input type="hidden" id="planSelected">
-
-    <button type="submit">Submit Request</button>
-  </form>
-
-  <p class="note">We will analyze your website and send growth plan within 24 hours.</p>
-</section>
-
-<footer>
-  <p>© 2026 Attiya SEO Agency | All Rights Reserved</p>
 </footer>
 
-<!-- WhatsApp -->
-<a class="whatsapp" href="https://wa.me/923000000000">WhatsApp Us</a>
+<a class="whatsapp-float" href="https://wa.me/923000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
 
+<script src="script.js" defer></script>
 </body>
 </html>
